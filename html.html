@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Exodia</title>
+      <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+      <main class="main">
+            <div class="top">
+                  <div>
+                        <span style="color: #FEA931;"><b>E</b>x</span><span>od</span><span style="color: #FEA931;"><b style="font-size: 20vw;">i</b>a</span>
+                  </div>
+                  <ion-icon style="z-index: 10000000;" class="open" onclick="navopen(window.scrollY)" name="menu-outline"></ion-icon>
+                  <div><span class="timer"></span></div>
+                  <ion-icon name="chevron-down-outline" onclick="window.scrollTo(0, window.innerHeight)"class="B"></ion-icon>
+                  <ion-icon name="chevron-down-outline" onclick="window.scrollTo(0, window.innerHeight)"class="C"></ion-icon>
+            </div>
+            <div class="nav">
+                  <ul>
+                        <li><a href="#about" data-text="About">About</a></li>
+                        <li><a href="#gallery" data-text="Gallery">Gallery</a></li>
+                        <li><a href="#events" data-text="Events">Events</a></li>
+                        <li><a href="#contact" data-text="Contact">Contact</a></li>
+                  </ul>
+                  <ion-icon class="close" onclick="navclose()" name="close-outline"></ion-icon>
+            </div>
+            <div class="navcom">
+                  <div id="about">
+                        <div>About</div>
+                        <div class="abouts">
+
+                        </div>
+                  </div>
+                  <div id="gallery">
+                        <div>Gallery</div>
+                        <div class="container">
+                              <div class="box a">
+                                    <img src="/assets/potrait.jpg" alt="">
+                              </div>
+                              <div class="box b">
+                                    <img src="/assets/nicholas-green-nPz8akkUmDI-unsplash.jpg" alt="">
+                              </div>
+                              <div class="box c">
+                                    <img src="/assets/landscape.jpg" alt="">
+                              </div>
+                              <div class="box d">
+                                    <img src="/assets/landscape 2.jpg" alt="">
+                              </div>
+                              <div class="box e">
+                                    <img src="" alt="">
+                              </div>
+                              <div class="box f">
+                                    <img src="" alt="">
+                              </div>
+                              <div class="box g">
+                                    <img src="" alt="">
+                              </div>
+                              <div class="box h">
+                                    <img src="" alt="">
+                              </div>
+                              <div class="box i">
+                                    <img src="" alt="">
+                              </div>
+                              <div class="box j">
+                                    <img src="" alt="">
+                              </div>
+                        </div>
+                  </div>
+                  <div id="contact">
+
+                  </div>
+            </div>
+      </main>
+      <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+      <script src="js/js.js"></script>
+</body>
+</html>
