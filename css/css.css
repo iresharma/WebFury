@@ -161,6 +161,7 @@ b {
       top: 15px;
       right: 5px;
       font-size: 60px;
+      transition: color 1s;
 }
 #gallery {
   padding: 5px;
