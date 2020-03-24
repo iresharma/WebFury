@@ -109,7 +109,7 @@ ul li:nth-child(6n+6) a:before
       align-items: center;
       flex-direction: column;
       visibility: visible;
-      background-image: url("/assets/topback2.jpg");
+      background-image: url("topback2.jpg");
       background-size: cover;
       background-attachment: fixed;
       opacity: 1;
