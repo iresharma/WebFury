@@ -41,11 +41,15 @@ window.onscroll = function() {
       }
       if(window.scrollY >= document.querySelector('#about').offsetTop + 200) {
             document.querySelector('#about').style.opacity = 1
-            console.log('work')
       }
       if(window.scrollY >= document.querySelector('#gallery').offsetTop + 200) {
             document.querySelector('#gallery').style.opacity = 1
-            console.log('work')
+      }
+      if(window.scrollY >= document.querySelector('#events').offsetTop + 200) {
+            document.querySelector('#events').style.opacity = 1
+      }
+      if(window.scrollY >= document.querySelector('#contact').offsetTop + 200) {
+            document.querySelector('#contact').style.opacity = 1
       }
       else {
 
@@ -76,3 +80,8 @@ function timer() {
   }
 
   timer()
+
+  function show(i) {
+        var el = document.querySelector('.spa' + i)
+        el.style.opacity = 1
+  }
