@@ -17,7 +17,7 @@ function navopen(offse) {
       this.off = offse
 }
 
-function navclose() {
+function navclose(x) {
       var main = document.querySelector('.top');
       var navcom = document.querySelector('.navcom');
       var nav = document.querySelector('.nav');
@@ -28,16 +28,15 @@ function navclose() {
       main.style.visibility = 'visible';
       main.style.opacity = 1
       this.navv = false
+      if(x !== 0){
+            this.off = x
+      }
       window.scrollTo(0, this.off);
 }
 
 window.onscroll = function() {
       if(this.navv === true) {
             window.scrollTo(0, 0);
-      }
-      if(window.scrollY >= 700) {
-            var el = document.querySelector('.open')
-            el.style.color = 'black'
       }
       if(window.scrollY >= document.querySelector('#about').offsetTop + 200) {
             document.querySelector('#about').style.opacity = 1
@@ -51,8 +50,15 @@ window.onscroll = function() {
       if(window.scrollY >= document.querySelector('#contact').offsetTop + 200) {
             document.querySelector('#contact').style.opacity = 1
       }
+      if(window.scrollY >= document.querySelector('#contact').offsetTop + 1000) {
+            window.scrollTo(0, document.querySelector('#contact').offsetTop + 1000)
+      }
+      if(window.scrollY > 700) {
+            var el = document.querySelector('.open')
+            el.style.color = 'black'
+            console.log(window.scrollY)
+      }
       else {
-
             var el = document.querySelector('.open')
             el.style.color = 'white'
       }
