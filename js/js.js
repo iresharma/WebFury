@@ -1,5 +1,6 @@
 var navv = false
 var off = 0
+console.log(document.querySelector('#gallery').style.opacity)
 
 function navopen(offse) {
       var main = document.querySelector('.top');
@@ -34,15 +35,13 @@ window.onscroll =function() {
       if(this.navv === true) {
             window.scrollTo(0, 0);
       }
-      if(window.scrollY <= 20) {
-            window.scrollTo(0,0);
-      }
       if(window.scrollY >= 700) {
             var el = document.querySelector('.open')
             el.style.color = 'black'
       }
-      if(window.scrollY >= document.querySelector('#gallery').offsetTop + 200) {
+      if(window.scrollY > document.querySelector('#gallery').offsetTop + 800) {
             document.querySelector('#gallery').style.opacity = 1
+            console.log('work')
       }
       else {
 
