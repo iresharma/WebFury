@@ -74,7 +74,7 @@ ul li a:hover:before
   left: 50%;
   font-weight: 200;
   letter-spacing: 10px;
-  width: 1800px;
+  width: 100vw;
   height: 1800px;
 }
 ul li:nth-child(6n+1) a:before
