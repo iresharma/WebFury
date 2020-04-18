@@ -64,7 +64,7 @@ window.onscroll = function() {
       }
 }
 function timer() {
-      var eventDay = new Date("Mar 26, 2020 8:00:00").getTime();
+      var eventDay = new Date("December 26, 2020 8:00:00").getTime();
       var seconds;
       x = setInterval(function() {
           var now = new Date().getTime();
